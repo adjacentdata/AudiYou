@@ -1,0 +1,202 @@
+/* Everything inside Post*/
+
+.newPost{
+    background-color:rgb(36, 49, 61);
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+/*Post-Header*/
+.post-header{
+    display: flex;
+    align-items: center;
+    padding: 15px 5px;
+    color: white;
+}
+
+.newPost-avatar{
+    height: 40px;
+    margin-right: 15px;
+}
+
+/*Footer*/
+.newPost-text{
+    font-weight: normal;
+    color: white;
+    padding: 20px;
+}
+
+strong{
+    padding-right: 15px;
+}
+
+/*Main Player*/
+.mp-main{
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+    background-color: rgb(230, 230, 230);
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset -3px -3px 10px rgb(58, 54, 54);
+}
+
+
+/*Main Player Information*/
+.mp-information{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mp-information .img-cover{
+    position: relative;
+    width: fit-content;
+    margin: 0, auto;
+}
+
+.img-cover img{
+    margin-top: 15px;
+    display: block;
+    height: 400px ;
+    object-fit: contain;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.title-info{
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 2px 2px black;
+}
+
+.artist-info{
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 2px 2px black;
+}
+
+/*Progress Bar (Attempt)*/
+.bar-progress{
+    position:relative;
+    width: 100%;
+    max-width: 300px;
+    height: 2px;
+    background-color: white;
+    border: black .5px solid;
+    border-radius: 75px;
+    margin-bottom: 5px;
+}
+
+.loader{
+    background-color: #194743;
+    transition: width .2s ease-in;
+    height: 100%;
+    border: inherit;
+    width: 25%;
+}
+
+/*Main Player: Controls*/
+
+.mp-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+/*Progress Bar*/
+
+.progress-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type=range]{
+    width: 250px;
+    cursor: pointer;
+    background: black;
+}
+
+.prog{
+    background:white;
+    appearance: none;
+    outline: none;
+    border-radius: 25px;
+    height: 5px;
+    margin: 15px 20px;
+    transition: .5s;
+}
+
+.prog:hover{
+    opacity: .5;
+}
+.prog::-webkit-slider-runnable-track{
+    width: 50%;
+}
+
+.prog::-webkit-slider-thumb{
+    appearance: none;
+    width: 7px;
+    height: 20px;
+    border-radius: 40px;
+    background:rgb(113, 212, 183);
+    border: black .5px solid;
+    cursor: pointer;
+}
+
+.mp-controls .play{
+    background-color: white;
+    display:flex;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: black;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black, inset 2px  2px 2px beige
+}
+
+.comment-section{
+    width: 70%;
+    margin-left:18px;
+    margin-bottom: 15px;
+}
+
+.comment-button{
+    width: 20%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: rgb(88, 113, 252);
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.posted-comments{
+    color:white;
+    font-size: 12px;
+    margin: 3px 0 5px 18px;
+}
+
+.posted-comments span{
+    margin-right: 10px;
+    font-weight: 600;
+}

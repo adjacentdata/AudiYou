@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+  }
+
+
+  .wrapper{
+    background: linear-gradient(145deg, rgb(25, 38, 117), rgb(121, 179, 226));
+    min-height: 100vh;
+  }
+
+  /*Header*/
+  .header{
+    background-color: rgb(255, 254, 254);
+    border-bottom: 0 2px 3px bisque;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  .wall{
+      background-color: white;
+      max-width: auto;
+      border-radius: 15px;
+      min-height: 75vh;
+      margin-left: 100px;
+      width: 400px;
+      margin-top: 50px;
+
+  }
+
+  .wall-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .form-text{
+    margin-top: 20px;
+  }
+
+  .upload-caption{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .side-img{
+    width: auto;
+    height: 75vh;
+    background-color: bisque;
+    margin-left: 100px;
+
+  }
+
+  .side-img img{
+    display: block;
+    height: 75vh ;
+    object-fit: contain;
+    border-radius: 15px;
+  }
+
+  progress{
+    margin-top: 20px;
+    margin-left: 70px;
+  }

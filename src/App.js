@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react'
 import './App.css';
+import HomePage from "./mainComp/HomePage"
+import Login from './mainComp/Login'
+import SignUp from './mainComp/SignUp'
+import {Container} from '@material-ui/core'
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {AuthProvider} from '../src/useContextFolder/AuthProvider.js/AuthProvider'
+import Uploader from './mainComp/Uploader'
+import PrivateRouter from './mainComp/PrivateRouter'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <AuthProvider>
+        <Switch>
+          <PrivateRouter exact path="/" component={HomePage}/>
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={SignUp}/>
+        </Switch>
+      </AuthProvider>
+    </BrowserRouter>
+
   );
 }
 

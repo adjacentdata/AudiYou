@@ -1,0 +1,48 @@
+.header{
+    background-color: rgb(255, 254, 254);
+    border-bottom: 0 2px 3px bisque;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+.img-logo{
+    height: 50px;
+    object-fit: contain; /* keeps aspect ratio */
+    padding: 18px;
+    background-color: white;
+}
+
+.card{
+    background-color: rgb(249, 253, 255);
+    width: 400px;
+    min-height: 55vh;
+    margin: 50px auto;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto ;
+    margin-top: 45px;
+    align-items: center;
+    padding: auto;
+    min-height: 25vh;
+
+}
+
+h1{
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 75px;
+    font-weight: lighter;
+}
+
+.log-in-link{
+    margin-top: 10px;
+}
