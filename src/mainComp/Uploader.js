@@ -3,7 +3,6 @@ import { Button, Input } from '@material-ui/core'
 import {Link} from 'react-router-dom'
 import {storage, database} from "./firebaseConsole"
 import './Uploader.css'
-import sidePhoto from '../imgs/background-img.jpg'
 import {useAuth} from '../useContextFolder/AuthProvider.js/AuthProvider'
 import firebase from 'firebase'
 function Uploader({userDisplay}){

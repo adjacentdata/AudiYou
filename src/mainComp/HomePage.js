@@ -6,8 +6,6 @@ import {Button, Modal} from '@material-ui/core'
 import {useAuth} from "../useContextFolder/AuthProvider.js/AuthProvider"
 import {useHistory, Link} from 'react-router-dom'
 import Uploader from './Uploader'
-import coverImg from '../imgs/practiceimg.jpg'
-import leanonme from '../imgs/leanonme.mp3'
 import UserProfile from './UserProfile'
 
 function HomePage() {
