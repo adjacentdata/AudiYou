@@ -3,12 +3,15 @@
 
 ## Important Note
 1. This project is a work in progress. The page still allows you to upload photos and images. However, I am looking for future collaborators to help me build:
-  * A profile page 
+  * A profile page
   * Add Profile picture functionality
   * Changing the backend from firebase to MERN
   * Update the uploader.js to accept multiple audio file types (.wav, .aif)
-2. Please limit your uploads to MP3 FILES ONLY. 
+2. Please limit your uploads to MP3 FILES ONLY.
 
+## Current Run
+
+![homepage](../src/AudiYou-Homepage.png)
 
 
 # Getting Started with Create React App

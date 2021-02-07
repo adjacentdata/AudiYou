@@ -46,9 +46,6 @@ function HomePage() {
       <div className = "header">
         <img src = "./images/AudiYou.png" alt ="My Logo" class = "img-logo" />
         {error}
-        <div>
-          <UserProfile userDisplay={newUser.displayName}/>
-        </div>
         <div className="header-buttons">
           <Button
             variant="contained"
@@ -75,6 +72,9 @@ function HomePage() {
       </div>
       <div className="web-page">
         {/* Posts */}
+        <div>
+          <UserProfile userDisplay={newUser.displayName}/>
+        </div>
         <div className = "allPosts">
           {
           posts.map(({id, postData}) =>(
