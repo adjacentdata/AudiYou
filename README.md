@@ -11,7 +11,7 @@
 
 ## Current Run
 
-(![HomePage](https://github.com/albert3rd/AudiYou/tree/main/src/AudiYou-Homepage.png?raw=true))
+![HomePage](https://github.com/albert3rd/AudiYou/blob/main/src/imgs/AudiYou-Homepage.png)
 
 # Getting Started with Create React App
 
