@@ -4,7 +4,7 @@ import NewPost from './NewPost'
 import {database} from './firebaseConsole'
 import {Button, Modal} from '@material-ui/core'
 import {useAuth} from "../useContextFolder/AuthProvider.js/AuthProvider"
-import {useHistory, Link} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import Uploader from './Uploader'
 import UserProfile from './UserProfile'
 

@@ -3,7 +3,6 @@ import Mplayer from './MPlayerComp/MPlayer'
 import './NewPost.css'
 import Avatar from '@material-ui/core/Avatar/'
 import { database } from './firebaseConsole'
-import { Button } from '@material-ui/core'
 function NewPost({username, caption, title, artist, cover, music, postId, userDisplay}){
     const [songs] = useState([
         {

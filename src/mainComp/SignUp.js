@@ -1,10 +1,8 @@
-import React, { useEffect,useState } from 'react'
+import React, { useState } from 'react'
 import {Button, Input } from '@material-ui/core'
 import {Alert} from '@material-ui/lab'
 import './SignUp.css'
-import {authorization} from "./firebaseConsole"
 import { useAuth } from '../useContextFolder/AuthProvider.js/AuthProvider'
-import {AuthProvider, newUser} from '../useContextFolder/AuthProvider.js/AuthProvider'
 import {Link, useHistory} from 'react-router-dom'
 
 function SignUp(){

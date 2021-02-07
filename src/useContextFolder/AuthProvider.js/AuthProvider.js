@@ -11,7 +11,6 @@ function useAuth(){
 function AuthProvider({children}){
     const [newUser, setNewUser] = useState()
     const [newSignIn, setNewSignIn] = useState()
-    const [username, setUsername] = useState('')
     function newSignUp(email, password, username){
         return (
             authorization.createUserWithEmailAndPassword(email, password)

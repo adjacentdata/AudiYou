@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState, useRef} from 'react'
 import MPinfo from './MPinfo'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome/'
 import {faPause, faPlay} from '@fortawesome/free-solid-svg-icons/'
@@ -28,7 +28,6 @@ function Player(props){
         postaudio.current.currentTime = newTime
         setCurTime(newTime)
     }
-
 
     return(
         <div className = "mp-main">

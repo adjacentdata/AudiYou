@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Input } from '@material-ui/core'
-import {Link} from 'react-router-dom'
 import {storage, database} from "./firebaseConsole"
 import './Uploader.css'
-import {useAuth} from '../useContextFolder/AuthProvider.js/AuthProvider'
 import firebase from 'firebase'
 function Uploader({userDisplay}){
     const [title, setTitle] = useState('')
@@ -11,9 +9,6 @@ function Uploader({userDisplay}){
     const [cover, setCover] = useState(null);
     const [music, setMusic] = useState(null);
     const [progressBar, setProgressBar] = useState(0);
-    const {newUser} = useAuth();
-    const [docId, setDocId] = useState('')
-    const [audioUrl, setAudioUrl] = useState('')
 
     function handleChosenCoverFile(e){
         if(e.target.files[0]){

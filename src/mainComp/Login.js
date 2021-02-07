@@ -1,21 +1,17 @@
-import React, { useEffect,useState } from 'react'
+import React, { useState } from 'react'
 import {Button, Input } from '@material-ui/core'
 import {Alert} from '@material-ui/lab'
 import './SignUp.css'
-import {authorization} from "./firebaseConsole"
 import { useAuth } from '../useContextFolder/AuthProvider.js/AuthProvider'
-import {AuthProvider, newUser} from '../useContextFolder/AuthProvider.js/AuthProvider'
 import {Link, useHistory} from 'react-router-dom'
 
 function Login(){
     const [email, setEmail] = useState('')
-    const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [newLogIn, setLogIn] = useState(false)
     const { loginToWebsite } = useAuth()
     const [error, setError] = useState('')
     const signInRedirect = useHistory()
-
 
     async function handleLogInConfirmed(e) {
         e.preventDefault()
@@ -27,10 +23,8 @@ function Login(){
         }catch{
             setError("Failed to log in")
         }
-
         setLogIn(false)
         setEmail('')
-        setUsername('')
         setPassword('')
     }
 
