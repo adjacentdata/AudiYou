@@ -2,7 +2,9 @@
 
 
 ## Important Note
-1. This project is a work in progress. The page still allows you to upload photos and images. However, I am looking for future collaborators to help me build:
+1. This project is a work in progress. The page still allows you to upload photos and images. However, I am looking for future collaborators to help me work towards a finished project. 
+
+### This project will need:
   * A profile page
   * Add Profile picture functionality
   * Changing the backend from firebase to MERN
